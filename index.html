@@ -3,74 +3,316 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bia, agente de IA — 4 PDFs grátis para quem me segue</title>
-<meta name="description" content="4 PDFs grátis para quem segue a Bia: tarefas para a IA, respostas de WhatsApp, combinados da equipe e bancos de mídia.">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#EEEBE6">
+<title>Bia, agente de IA · Kit Bia e PDFs grátis</title>
+<meta name="description" content="Você manda pelo WhatsApp, a Bia faz no seu computador. Kit Bia por R$ 39,90, pagamento único, com garantia de 7 dias. E 6 PDFs grátis para baixar.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://cristianmartini.github.io/bia-links/">
-<meta property="og:title" content="Bia, agente de IA — 4 PDFs grátis para quem me segue">
-<meta property="og:description" content="Me segue no Instagram que os 4 PDFs chegam no seu direct: tarefas para a IA, respostas de WhatsApp, combinados da equipe e bancos de mídia.">
-<meta property="og:image" content="https://cristianmartini.github.io/bia-links/img/bia.jpg">
+<meta property="og:title" content="Bia, agente de IA · Kit Bia e PDFs grátis">
+<meta property="og:description" content="Você manda pelo WhatsApp. Ela faz no seu computador. Kit Bia por R$ 39,90 e 6 PDFs grátis para baixar.">
+<meta property="og:image" content="https://cristianmartini.github.io/bia-links/video/topo-poster.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="720">
 <link rel="icon" href="img/bia.jpg">
-<!-- Página de "link na bio" da Bia. Criada em 04/11/2026. No ar desde 05/11/2026 em https://cristianmartini.github.io/bia-links/
-     (repositório público github.com/CristianMartini/bia-links, GitHub Pages, grátis). Esta pasta é o repositório.
-     Regra do Cristian (05/11): "pra liberar precisa estar seguindo, única regra". Por isso esta página NÃO tem link para baixar:
-     ela mostra os PDFs e manda seguir. Os PDFs ficam em presente/, cujo link só vai no direct para quem já segue.
-     Mudar a página (PDF novo, texto novo): só com OK do Cristian em mensagem.
-     PDF novo: gere com iscas/gerar_iscas.py, copie o .pdf para pdf/ e a capa (240 px de largura) para img/, e repita um bloco
-     <div class="item"> aqui e um bloco <a class="item"> em presente/index.html.
-     Publicar a mudança: nesta pasta rode  git add -A  depois  git commit -m "o que mudou"  depois  git push
-     Em 1 a 2 minutos está no ar. Confira abrindo o endereço acima e o endereço de presente/. -->
+<link rel="preload" href="fontes/bricolage-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="video/topo-poster.jpg" as="image">
+<!-- Página "link na bio" da Bia (@bia.agente.ia). No ar em https://cristianmartini.github.io/bia-links/
+     Repositório público github.com/CristianMartini/bia-links, GitHub Pages (grátis). Esta pasta é o repositório. NÃO é Vercel.
+     24/11/2026, pedido do Cristian (áudio 07:43): venda do Kit Bia em destaque (checkout Kiwify y7XrDr4, R$ 39,90) e PDFs grátis
+     para baixar direto. Isso substitui a regra de 05/11 ("só quem segue", PDFs pelo direct). presente/ continua igual.
+     Texto de venda: só o que está em MartiniAgente/negocio/produtos/kit-bia/OFERTA.md ("Pode afirmar"). Sem contador nem escassez.
+     PDF novo: copie o .pdf para pdf/, a capa 240x300 (topo da página 1) para img/ e repita um <li> da lista em #pdfs.
+     Publicar: nesta pasta rode  git add index.html pdf img video fontes  depois  git commit -m "o que mudou"  depois  git push
+     Em 1 a 2 minutos está no ar. Confira o endereço acima no celular. Mudar a página: só com OK do Cristian em mensagem. -->
+<script>document.documentElement.className+=' js'</script>
 <style>
-@font-face{font-family:Bric;src:url(fontes/BricolageGrotesque-ExtraBold.ttf);font-display:swap}
-@font-face{font-family:Inter;src:url(fontes/Inter-Regular.ttf);font-display:swap}
-:root{--off:#EEEBE6;--terra:#E2704F;--terra-esc:#A94127;--choco:#3B1F17;--creme:#FFF9EE}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--off);color:var(--choco);font-family:Inter,system-ui,sans-serif;min-height:100vh;display:flex;justify-content:center}
-main{width:100%;max-width:520px;padding:36px 18px 48px}
-.topo{text-align:center;margin-bottom:20px}
-.topo img{width:104px;height:104px;border-radius:50%;border:4px solid var(--creme);box-shadow:0 10px 26px rgba(59,31,23,.15)}
-h1{font-family:Bric;font-size:30px;margin-top:12px;letter-spacing:-.02em}
-.topo p{font-size:16px;line-height:1.45;color:#5a3a2e;margin-top:6px}
-.oferta{background:var(--creme);border-radius:22px;padding:20px 18px;box-shadow:0 8px 22px rgba(59,31,23,.08)}
-.oferta h2{font-family:Bric;font-weight:400;font-size:23px;line-height:1.15;text-align:center}
-.oferta ol{list-style:none;margin:16px 0 18px}
-.oferta li{display:flex;gap:12px;align-items:center;font-size:15px;line-height:1.4;margin-bottom:10px}
-.oferta li i{flex:0 0 30px;height:30px;border-radius:50%;background:var(--terra);color:var(--creme);font-style:normal;font-family:Bric;display:flex;align-items:center;justify-content:center}
-.botao{display:block;text-align:center;padding:15px 10px;border-radius:99px;font-weight:600;text-decoration:none;font-size:16px}
-.b1{background:var(--terra);color:var(--creme)}
-.b2{background:var(--choco);color:var(--off)}
-.rot{font-size:12px;letter-spacing:.16em;color:var(--terra-esc);margin:24px 4px 10px;text-transform:uppercase}
-.item{display:flex;gap:14px;align-items:center;background:var(--creme);border-radius:20px;padding:10px;margin-bottom:12px;box-shadow:0 6px 18px rgba(59,31,23,.07)}
-.item img{width:76px;height:95px;object-fit:cover;object-position:top;border-radius:12px;flex:0 0 76px}
-.item b{font-family:Bric;font-weight:400;font-size:17px;line-height:1.22;display:block}
-.item span{font-size:13px;color:var(--terra-esc);margin-top:6px;display:block}
-footer{text-align:center;font-size:12px;color:#765748;margin-top:26px}
+@font-face{font-family:"Bric";src:url(fontes/bricolage-800.woff2) format("woff2"),url(fontes/BricolageGrotesque-ExtraBold.ttf) format("truetype");font-weight:800;font-style:normal;font-display:swap}
+@font-face{font-family:"Inter";src:url(fontes/inter-400.woff2) format("woff2"),url(fontes/Inter-Regular.ttf) format("truetype");font-weight:400;font-style:normal;font-display:swap}
+:root{
+  --off:#EEEBE6;--off-2:#E6D9CE;--creme:#FFF9EE;--pele:#F6E1D7;--zap:#D9FDD3;
+  --terra:#E2704F;--terra-claro:#EB8566;--terra-esc:#A94127;
+  --choco:#3B1F17;--texto:#5A3A2E;--suave:#765748;
+  --titulo:"Bric",ui-sans-serif,system-ui,sans-serif;
+  --corpo:"Inter",ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --sombra:0 0 0 1px rgba(59,31,23,.06),0 12px 24px -18px rgba(59,31,23,.5);
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{color-scheme:light;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;min-height:100vh;background:var(--off) radial-gradient(64rem 32rem at 50% -14rem,rgba(226,112,79,.22),transparent 70%) no-repeat;color:var(--choco);font:400 16px/1.5 var(--corpo);-webkit-font-smoothing:antialiased}
+img,video,svg{display:block;max-width:100%}
+a{color:inherit;-webkit-tap-highlight-color:rgba(226,112,79,.2)}
+h1,h2,p{margin:0}
+p{text-wrap:pretty}
+h1,h2{font-family:var(--titulo);font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+:focus-visible{outline:3px solid var(--terra-esc);outline-offset:3px}
+.escuro :focus-visible{outline-color:var(--terra-claro)}
+.ico{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+main{max-width:480px;margin:0 auto;padding:14px 16px 28px}
+
+/* topo */
+.perfil{display:flex;align-items:center;gap:12px}
+.avatar{width:52px;height:52px;flex:none;border-radius:50%;object-fit:cover;box-shadow:0 0 0 3px var(--off),0 0 0 5px var(--terra)}
+.perfil-txt{flex:1;min-width:0}
+.nome{font:800 18px/1.2 var(--titulo);letter-spacing:-.01em}
+.arroba{font-size:14px;line-height:1.3;color:var(--suave)}
+.chip{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 14px;border-radius:999px;background:var(--creme);font:800 14px/1 var(--titulo);text-decoration:none;white-space:nowrap;box-shadow:var(--sombra)}
+.chip .ico{width:16px;height:16px;color:var(--terra-esc)}
+.promessa{margin-top:16px;font-size:clamp(23px,6.6vw,32px);line-height:1.12}
+.promessa span{display:block;color:var(--terra-esc)}
+
+/* bloco de venda */
+.venda{margin-top:16px;padding:10px 10px 18px;border-radius:28px;background:var(--choco);color:var(--off);box-shadow:0 28px 44px -28px rgba(59,31,23,.8)}
+.video{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:20px;background:#EFE7DF}
+.venda-txt{padding:14px 8px 0}
+.eyebrow{font:800 13px/1.2 var(--titulo);letter-spacing:.08em;text-transform:uppercase;color:var(--terra-claro)}
+.venda-desc{margin-top:6px;color:var(--off-2)}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;margin-top:16px;padding:16px 20px;border-radius:16px;background:var(--terra);color:var(--choco);font:800 19px/1.2 var(--titulo);text-decoration:none;box-shadow:inset 0 -3px 0 rgba(59,31,23,.18),0 14px 26px -14px rgba(226,112,79,.8);transition:background-color .15s ease,transform .15s ease}
+.btn .ico{width:22px;height:22px;stroke-width:2.4}
+.btn:active{transform:translateY(1px)}
+.selos{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 18px;margin:12px 0 0;padding:0;list-style:none;font-size:14px;line-height:1.3;color:var(--off)}
+.selos li{display:flex;align-items:center;gap:6px}
+.selos .ico{width:16px;height:16px;color:var(--terra-claro);stroke-width:2.6}
+.nota{margin-top:6px;text-align:center;font-size:14px;line-height:1.4;color:var(--off-2);text-wrap:balance}
+
+/* o que ela faz */
+.faz{margin-top:44px}
+.faz h2{font-size:clamp(25px,7vw,32px);line-height:1.08}
+.faz h2 span{display:block;color:var(--terra-esc)}
+.faz-txt{margin-top:10px;color:var(--texto)}
+.chat{margin-top:18px;border-radius:24px;overflow:hidden;background:#EFE6DB radial-gradient(rgba(59,31,23,.07) 1px,transparent 1.6px) 0 0/16px 16px;box-shadow:var(--sombra)}
+.chat-topo{display:flex;align-items:center;gap:10px;padding:10px 14px;background:var(--choco);color:var(--off)}
+.chat-topo img{width:34px;height:34px;border-radius:50%}
+.chat-topo b{display:block;font:800 15px/1.2 var(--titulo)}
+.chat-topo small{display:block;font-size:13px;line-height:1.3;color:var(--off-2)}
+.baloes{display:flex;flex-direction:column;align-items:flex-end;gap:8px;margin:0;padding:14px 12px 16px;list-style:none}
+.baloes li{max-width:86%;padding:8px 12px;border-radius:14px 14px 4px 14px;background:var(--zap);line-height:1.35;box-shadow:0 1px 1.5px rgba(59,31,23,.16)}
+.cria{margin-top:20px;font:800 16px/1.3 var(--titulo)}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0;list-style:none}
+.tags li{padding:7px 12px;border-radius:999px;background:var(--creme);font-size:15px;line-height:1.2;box-shadow:inset 0 0 0 1px rgba(59,31,23,.12)}
+.fecho{margin-top:20px;font:800 21px/1.2 var(--titulo);letter-spacing:-.01em}
+.prova{margin-top:14px;padding:14px 16px;border-left:4px solid var(--terra);border-radius:4px 16px 16px 4px;background:var(--creme);color:var(--texto)}
+
+/* PDFs grátis */
+.pdfs{margin-top:48px;scroll-margin-top:12px}
+.pdfs h2{font-size:clamp(26px,7.4vw,34px);line-height:1.05}
+.pdfs-sub{margin-top:6px;color:var(--texto)}
+.dica{margin-top:10px;padding:10px 12px;border-radius:12px;background:var(--pele);font-size:14px;line-height:1.4;color:var(--texto)}
+.lista{display:grid;gap:12px;margin:16px 0 0;padding:0;list-style:none}
+.pdf{display:grid;grid-template-columns:84px 1fr;gap:14px;align-items:center;padding:10px 12px 10px 10px;border-radius:20px;background:var(--creme);text-decoration:none;box-shadow:var(--sombra);transition:transform .18s ease,box-shadow .18s ease}
+.pdf img{width:84px;height:105px;border-radius:12px;object-fit:cover;object-position:top;box-shadow:0 6px 12px -6px rgba(59,31,23,.45)}
+.pdf-txt{min-width:0}
+.novo{display:inline-block;margin-bottom:5px;padding:3px 8px;border-radius:999px;background:var(--pele);color:var(--terra-esc);font:800 11.5px/1.3 var(--titulo);letter-spacing:.06em;text-transform:uppercase}
+.pdf-tit{display:block;font:800 16.5px/1.22 var(--titulo);letter-spacing:-.005em}
+.pdf-desc{display:block;margin-top:4px;font-size:15px;line-height:1.4;color:var(--texto)}
+.pdf-acao{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;margin-top:10px}
+.baixar{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 14px;border-radius:999px;background:var(--choco);color:var(--off);font:800 14px/1 var(--titulo)}
+.baixar .ico{width:16px;height:16px}
+.pags{font-size:13px;color:var(--suave)}
+
+/* oferta final */
+.fim{margin-top:56px}
+.fim-bia{position:relative;z-index:0;width:150px;height:auto;margin:0 auto -8px}
+.oferta{position:relative;z-index:1;padding:24px 18px 20px;border-radius:28px;background:var(--choco);color:var(--off);box-shadow:0 28px 44px -28px rgba(59,31,23,.8)}
+.oferta h2{margin-top:8px;font-size:clamp(25px,7vw,31px);line-height:1.1}
+.oferta h2 span{display:block;color:var(--terra-claro)}
+.passos{display:grid;gap:12px;margin:18px 0 0;padding:0;list-style:none;counter-reset:passo}
+.passos li{display:grid;grid-template-columns:32px 1fr;gap:12px;align-items:start;color:var(--off-2)}
+.passos li::before{counter-increment:passo;content:counter(passo);display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:rgba(226,112,79,.2);color:var(--terra-claro);font:800 15px/1 var(--titulo)}
+.passos span{padding-top:4px}
+.garantia{display:flex;gap:12px;margin-top:14px;padding:14px;border-radius:16px;background:rgba(238,235,230,.08);font-size:15px;line-height:1.45;color:var(--off-2)}
+.garantia .ico{width:24px;height:24px;color:var(--terra-claro)}
+.garantia strong{display:block;color:var(--off);font:800 16px/1.3 var(--titulo)}
+
+/* perguntas */
+.faq{margin-top:40px}
+.faq h2{margin-bottom:4px;font-size:24px;line-height:1.15}
+.faq details{border-bottom:1px solid rgba(59,31,23,.14)}
+.faq summary{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;padding:12px 0;cursor:pointer;list-style:none;font:800 17px/1.3 var(--titulo)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .ico{color:var(--terra-esc);transition:transform .2s ease}
+.faq details[open] summary .ico{transform:rotate(180deg)}
+.faq details p{padding:0 0 16px;color:var(--texto)}
+
+/* links e rodapé */
+.links{display:grid;gap:10px;margin-top:32px}
+.link{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:12px 18px;border-radius:16px;background:var(--creme);font:800 16px/1.2 var(--titulo);text-decoration:none;box-shadow:inset 0 0 0 1.5px rgba(59,31,23,.16)}
+.link .ico{color:var(--terra-esc)}
+footer{margin-top:28px;text-align:center;font-size:13px;line-height:1.5;color:var(--suave);text-wrap:balance}
+
+@media (hover:hover){
+  .btn:hover{background:var(--terra-claro)}
+  .pdf:hover{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(59,31,23,.08),0 18px 30px -18px rgba(59,31,23,.6)}
+  .link:hover,.chip:hover{background:var(--pele)}
+}
+@media (min-width:720px){
+  body{background:var(--off) radial-gradient(64rem 36rem at 50% -12rem,rgba(226,112,79,.26),transparent 72%) no-repeat}
+  main{padding-top:40px}
+}
+@media (prefers-reduced-motion:no-preference){
+  html{scroll-behavior:smooth}
+  .js .baloes li{opacity:0;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease;transition-delay:calc(var(--i,0) * 120ms)}
+  .js .chat.ver .baloes li{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important;animation:none!important}
+}
 </style>
 </head>
 <body>
 <main>
- <div class="topo">
-  <img src="img/bia.jpg" alt="Bia, personagem de IA">
-  <h1>Bia, agente de IA</h1>
-  <p>Ajudo quem tem negócio pequeno a pôr a IA para trabalhar de verdade.</p>
- </div>
- <a class="item" style="text-decoration:none;color:inherit;border:2px solid var(--terra)" href="pdf/prompt-produto-digital.pdf" download="prompt-produto-digital-bia.pdf"><img src="img/prompt-produto-digital.jpg" alt="Capa do guia Da ideia ao produto digital"><div><b>Prompt: produto digital</b><span>Grátis · 11 etapas · PDF completo para copiar</span><span>Baixar agora →</span></div></a>
- <div class="oferta">
-  <h2>4 PDFs grátis para quem me segue</h2>
-  <ol>
-   <li><i>1</i><span>Toque no botão e me siga no Instagram.</span></li>
-   <li><i>2</i><span>Os 4 PDFs chegam no seu direct.</span></li>
-  </ol>
-  <a class="botao b1" href="https://www.instagram.com/bia.agente.ia/">Seguir a Bia no Instagram</a>
- </div>
- <div class="rot">O que você recebe</div>
- <div class="item"><img src="img/30-tarefas.jpg" alt=""><div><b>30 tarefas que a Bia faz sozinha no seu computador</b><span>Chega no seu direct</span></div></div>
- <div class="item"><img src="img/whatsapp-respostas.jpg" alt=""><div><b>25 respostas prontas para o WhatsApp do seu negócio</b><span>Chega no seu direct</span></div></div>
- <div class="item"><img src="img/combinados.jpg" alt=""><div><b>Seu negócio trava quando você sai? Checklist dos 10 combinados</b><span>Chega no seu direct</span></div></div>
- <div class="item"><img src="img/midia-gratis.jpg" alt=""><div><b>Fotos, vídeos e músicas grátis para o seu negócio</b><span>Chega no seu direct</span></div></div>
- <div class="rot">Já me segue e não chegou?</div>
- <a class="botao b2" href="https://ig.me/m/bia.agente.ia">Me chama no direct</a>
- <footer>Personagem criada com IA</footer>
+
+  <header class="perfil">
+    <img class="avatar" src="img/bia.jpg" width="240" height="240" alt="Bia, personagem criada com IA">
+    <div class="perfil-txt">
+      <p class="nome">Bia, agente de IA</p>
+      <p class="arroba">@bia.agente.ia</p>
+    </div>
+    <a class="chip" href="#pdfs">PDFs grátis<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+  </header>
+
+  <h1 class="promessa">Você manda pelo WhatsApp. <span>Ela faz no seu computador.</span></h1>
+
+  <section class="venda escuro" aria-label="Kit Bia">
+    <video class="video" autoplay muted loop playsinline disablepictureinpicture preload="metadata" poster="video/topo-poster.jpg" width="1280" height="720" aria-label="Vídeo: pedido por áudio no WhatsApp e orçamento em PDF de volta na conversa.">
+      <source src="video/topo.mp4" type="video/mp4">
+    </video>
+    <div class="venda-txt">
+      <p class="eyebrow">Kit Bia · sua funcionária de IA</p>
+      <p class="venda-desc">Ela abre programas, mexe nos seus arquivos e faz o que uma pessoa faria no computador.</p>
+      <a class="btn" href="https://pay.kiwify.com.br/y7XrDr4">Quero a Bia por R$&nbsp;39,90<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <ul class="selos">
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Pagamento único</li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Garantia de 7 dias</li>
+      </ul>
+      <p class="nota">Compre pelo celular, instale no seu PC em minutos.</p>
+    </div>
+  </section>
+
+  <section class="faz">
+    <h2>O ChatGPT conversa. <span>A Bia trabalha.</span></h2>
+    <p class="faz-txt">Ela mexe nos seus arquivos e planilhas, lê e organiza e-mail, monta documentos e imagens e lembra do seu negócio. E trabalha sozinha nos horários que você combinar.</p>
+    <div class="chat">
+      <div class="chat-topo">
+        <img src="img/bia.jpg" width="240" height="240" alt="" loading="lazy" decoding="async">
+        <span><b>Bia</b><small>pelo WhatsApp ou Telegram, até por áudio</small></span>
+      </div>
+      <ul class="baloes" aria-label="Exemplos de pedidos para a Bia">
+        <li style="--i:0">Monta um site da minha loja</li>
+        <li style="--i:1">Pesquisa meus 10 concorrentes e me diz os preços</li>
+        <li style="--i:2">Faz um vídeo do meu produto</li>
+        <li style="--i:3">Quanto vendi esse mês?</li>
+        <li style="--i:4">Automatiza meu relatório de vendas toda segunda</li>
+        <li style="--i:5">Me lembra amanhã às 9h de pagar o fornecedor</li>
+      </ul>
+    </div>
+    <p class="cria">Ela cria do zero:</p>
+    <ul class="tags">
+      <li>Sites e páginas</li><li>Planilhas e relatórios</li><li>Apresentações</li><li>E-books e PDFs</li><li>Vídeos</li><li>Imagens</li><li>Automações</li>
+    </ul>
+    <p class="fecho">Se uma pessoa faz no computador, ela faz.</p>
+    <p class="prova">A prova está na sua frente: esta página, o vídeo e os PDFs grátis aqui embaixo foram feitos pela própria Bia. Se ela faz isso, faz o seu serviço também.</p>
+  </section>
+
+  <section class="pdfs" id="pdfs">
+    <h2>PDFs grátis</h2>
+    <p class="pdfs-sub">Feitos pela Bia para o seu negócio. Toque e baixe, sem cadastro.</p>
+    <p class="dica" id="dica-app" hidden>Abriu pelo Instagram e o PDF não baixou? Toque nos três pontinhos no alto da tela e escolha abrir no navegador.</p>
+    <ul class="lista">
+      <li><a class="pdf" href="pdf/prompt-produto-digital.pdf" download="prompt-produto-digital-bia.pdf">
+        <img src="img/prompt-produto-digital.jpg" width="240" height="300" alt="" loading="lazy" decoding="async">
+        <span class="pdf-txt"><strong class="pdf-tit">Prompt para criar o seu produto digital</strong><span class="pdf-desc">Da ideia à oferta, em 11 etapas. Texto pronto para copiar.</span>
+        <span class="pdf-acao"><span class="baixar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Baixar PDF</span><span class="pags">11 páginas</span></span></span>
+      </a></li>
+      <li><a class="pdf" href="pdf/7-mensagens.pdf" download="7-mensagens-orcamentos-bia.pdf">
+        <img src="img/7-mensagens.jpg" width="240" height="300" alt="" loading="lazy" decoding="async">
+        <span class="pdf-txt"><span class="novo">Novo</span><strong class="pdf-tit">7 mensagens para retomar orçamentos sem insistência</strong><span class="pdf-desc">Textos editáveis para salão, loja e prestadores de serviço.</span>
+        <span class="pdf-acao"><span class="baixar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Baixar PDF</span><span class="pags">3 páginas</span></span></span>
+      </a></li>
+      <li><a class="pdf" href="pdf/30-tarefas.pdf" download="30-tarefas-bia.pdf">
+        <img src="img/30-tarefas.jpg" width="240" height="300" alt="" loading="lazy" decoding="async">
+        <span class="pdf-txt"><strong class="pdf-tit">30 tarefas que a Bia faz sozinha no seu computador</strong><span class="pdf-desc">Copie o pedido, mande no WhatsApp e vá viver. Separado por tipo de negócio.</span>
+        <span class="pdf-acao"><span class="baixar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Baixar PDF</span><span class="pags">8 páginas</span></span></span>
+      </a></li>
+      <li><a class="pdf" href="pdf/whatsapp-respostas.pdf" download="respostas-whatsapp-bia.pdf">
+        <img src="img/whatsapp-respostas.jpg" width="240" height="300" alt="" loading="lazy" decoding="async">
+        <span class="pdf-txt"><strong class="pdf-tit">25 respostas prontas para o WhatsApp do seu negócio</strong><span class="pdf-desc">Cliente perguntou, você responde em 5 segundos. É só trocar o que está entre colchetes.</span>
+        <span class="pdf-acao"><span class="baixar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Baixar PDF</span><span class="pags">9 páginas</span></span></span>
+      </a></li>
+      <li><a class="pdf" href="pdf/combinados.pdf" download="combinados-equipe-bia.pdf">
+        <img src="img/combinados.jpg" width="240" height="300" alt="" loading="lazy" decoding="async">
+        <span class="pdf-txt"><strong class="pdf-tit">Seu negócio trava quando você sai?</strong><span class="pdf-desc">Checklist com 10 combinados que a equipe segue sozinha. Você só entra nas exceções.</span>
+        <span class="pdf-acao"><span class="baixar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Baixar PDF</span><span class="pags">6 páginas</span></span></span>
+      </a></li>
+      <li><a class="pdf" href="pdf/midia-gratis.pdf" download="midia-gratis-bia.pdf">
+        <img src="img/midia-gratis.jpg" width="240" height="300" alt="" loading="lazy" decoding="async">
+        <span class="pdf-txt"><strong class="pdf-tit">Fotos, vídeos e músicas grátis para o seu negócio</strong><span class="pdf-desc">5 bancos com uso comercial liberado e sem precisar dar crédito.</span>
+        <span class="pdf-acao"><span class="baixar"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Baixar PDF</span><span class="pags">5 páginas</span></span></span>
+      </a></li>
+    </ul>
+  </section>
+
+  <section class="fim" aria-label="Comprar o Kit Bia">
+    <img class="fim-bia" src="img/bia-celular.webp" width="557" height="608" alt="" loading="lazy" decoding="async">
+    <div class="oferta escuro">
+      <p class="eyebrow">Kit Bia</p>
+      <h2>Contrate uma funcionária de IA por R$&nbsp;39,90. <span>Uma vez, para sempre.</span></h2>
+      <ol class="passos">
+        <li><span>Compre pelo celular.</span></li>
+        <li><span>Instale no seu PC em minutos. A própria IA guia: é só dizer “vamos instalar”.</span></li>
+        <li><span>Mande o primeiro pedido pelo WhatsApp ou Telegram. Pode ser por áudio.</span></li>
+      </ol>
+      <a class="btn" href="https://pay.kiwify.com.br/y7XrDr4">Quero a Bia por R$&nbsp;39,90<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <p class="garantia"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 3.5 8 8 9 4.5-1 8-4 8-9V6l-8-3z"/><path d="m9 12 2 2 4-4"/></svg><span><strong>Garantia de 7 dias</strong>Se ela não for para você, peça o reembolso em até 7 dias e a Kiwify devolve o seu dinheiro.</span></p>
+    </div>
+  </section>
+
+  <section class="faq">
+    <h2>Perguntas rápidas</h2>
+    <details>
+      <summary>Funciona no meu computador?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p>Funciona no seu computador com Windows. Você compra pelo celular e instala no PC em minutos, com a própria IA guiando.</p>
+    </details>
+    <details>
+      <summary>Tem mensalidade?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p>O Kit Bia é pagamento único de R$&nbsp;39,90, sem mensalidade nossa. Ela usa a assinatura de IA que você já tem: ChatGPT, Claude ou Gemini.</p>
+    </details>
+    <details>
+      <summary>Como eu falo com ela?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p>Pelo WhatsApp ou pelo Telegram, de qualquer lugar, ou pelo painel no PC. Pode mandar áudio que ela entende.</p>
+    </details>
+    <details>
+      <summary>Preciso explicar tudo toda vez?<svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+      <p>Não. Ela tem memória: aprende como você gosta e lembra do seu negócio.</p>
+    </details>
+  </section>
+
+  <nav class="links" aria-label="Fale com a Bia">
+    <a class="link" href="https://ig.me/m/bia.agente.ia"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.8 7L4 20l1.1-4.6A8 8 0 1 1 21 12z"/></svg>Outra dúvida? Me chama no direct</a>
+    <a class="link" href="https://www.instagram.com/bia.agente.ia/"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6"/></svg>Seguir @bia.agente.ia</a>
+  </nav>
+
+  <footer>Personagem criada com IA · Conteúdo produzido com IA e revisado.</footer>
+
 </main>
+<script>
+(function(){
+  var calmo = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var temIO = 'IntersectionObserver' in window;
+  var v = document.querySelector('.video');
+  if (v) {
+    var tocar = function(){ var p = v.play(); if (p && p.catch) p.catch(function(e){ if (e && e.name === 'NotAllowedError') v.controls = true; }); };
+    if (calmo) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; }
+    else if (temIO) { new IntersectionObserver(function(es){ es.forEach(function(e){ e.isIntersecting ? tocar() : v.pause(); }); }, {threshold: .2}).observe(v); }
+  }
+  var c = document.querySelector('.chat');
+  if (c) {
+    if (temIO && !calmo) { var o = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { c.classList.add('ver'); o.disconnect(); } }); }, {threshold: .25}); o.observe(c); }
+    else c.classList.add('ver');
+  }
+  if (/Instagram|FBAN|FBAV/i.test(navigator.userAgent)) { var d = document.getElementById('dica-app'); if (d) d.hidden = false; }
+})();
+</script>
 </body>
 </html>
